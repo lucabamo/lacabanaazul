@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lucabamo.github.io/lacabanaazul/sitemap.xml
+Sitemap: https://lacabanaazul.mx/sitemap.xml

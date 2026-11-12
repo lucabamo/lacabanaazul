@@ -4,7 +4,7 @@ Landing de una sola página para **La Cabaña Azul** (San Isidro, Cedral, S.L.P.
 
 HTML, CSS y JavaScript sin dependencias ni paso de compilación: funciona tal cual en GitHub Pages, Netlify o cualquier hosting estático.
 
-**Sitio:** https://lucabamo.github.io/lacabanaazul/
+**Sitio:** https://lacabanaazul.mx/
 
 ## Estructura
 
@@ -19,15 +19,14 @@ assets/favicon.svg, assets/apple-touch-icon.png
 sitemap.xml  robots.txt  netlify.toml  .nojekyll
 ```
 
-## Publicar en GitHub Pages
+## Publicación
 
-1. En GitHub: **Settings → Pages**.
-2. *Source*: **Deploy from a branch** · Branch: **main** · Carpeta: **/ (root)** → *Save*.
-3. En 1–2 minutos queda en `https://lucabamo.github.io/lacabanaazul/`.
-
-### Si después compran un dominio (recomendado para SEO)
-
-Busca y reemplaza `https://lucabamo.github.io/lacabanaazul/` por el dominio nuevo (p. ej. `https://lacabanaazul.mx/`) en `index.html`, `404.html`, `sitemap.xml` y `robots.txt`, y configúralo en *Settings → Pages → Custom domain*. Con dominio propio, Google sí lee el `robots.txt` (en una subcarpeta de github.io no).
+- **Hosting:** GitHub Pages (Settings → Pages → rama `main`, carpeta `/ (root)`).
+- **Dominio:** `lacabanaazul.mx`, registrado en Cloudflare. El archivo `CNAME` le dice a GitHub cuál es el dominio.
+- **DNS en Cloudflare** (todos en "DNS only", nube gris):
+  - `A` `@` → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+  - `CNAME` `www` → `lucabamo.github.io`
+- En Settings → Pages, cuando el DNS esté listo, activar **Enforce HTTPS**.
 
 ## Después de publicar (SEO)
 
